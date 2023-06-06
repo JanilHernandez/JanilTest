@@ -4,19 +4,29 @@ muestre por pantalla en orden descendente.
  */
 package ejercicio15guia7;
 import java.util.Scanner;
+
+
 public class Ejercicio15guiaJAVA {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         int[] Vector = new int[101];
         
+        int i;
         llenarVector(Vector);
+    
+        for (i = 0; i < Vector.length; i++){
+            System.out.println(i + " " +Vector[i]);
+        }
+            
     }
      public static void llenarVector(int[] Vector) {
-        int llenado;
+        int llenado, limite;
+        limite = 100;
         
-        for (llenado = 0; llenado <= 100; llenado--){
-            Vector[llenado] = llenado;
+        for (llenado = 0; llenado  < Vector.length; llenado++){
+            Vector[llenado] = limite;
+            limite--;
         }
             System.out.print(llenado);
      }
