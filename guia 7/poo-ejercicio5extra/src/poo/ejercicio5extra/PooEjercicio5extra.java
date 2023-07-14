@@ -11,17 +11,17 @@ No ha acertado. Intente adivinarlo introduciendo otro mes: agosto
  */
 package poo.ejercicio5extra;
 
-/**
- *
- * @author Usuario
- */
-public class PooEjercicio5extra {
+import Entidades.Secreto;
+import Servicio.ServicioSecreto;
 
-    /**
-     * @param args the command line arguments
-     */
+public class PooEjercicio5extra {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Secreto s = new Secreto();
+        ServicioSecreto sc = new ServicioSecreto();
+        
+        sc.crearArreglo();
+        sc.adivinar();
+        
     }
     
 }
